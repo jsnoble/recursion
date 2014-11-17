@@ -34,11 +34,9 @@ var stringifyJSON = function(obj) {
   	else{
   		var result = [];
   		var key = Object.keys(obj);
-  		console.log(key);
   		key.forEach(function (key){
   			var val = stringifyJSON(obj[key]);
   			var keys = stringifyJSON(key);
-  			console.log(val);
   			if (val !== null) {
   				result.push(  keys + ":"  + val)
   			}
@@ -53,4 +51,3 @@ var stringifyJSON = function(obj) {
   }
 };
 
-f
